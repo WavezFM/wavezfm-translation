@@ -259,9 +259,9 @@
       "userBanned": "Esta conta foi suspensa do WavezFM. Se isso parece um erro, fale com a equipe."
     },
     "popup": {
-      "title": "Finalizando autenticacao",
+      "title": "Finalizando autenticação",
       "description": "Estamos concluindo o login seguro da sua conta nesta janela.",
-      "fallback": "Se ela nao fechar sozinha, pode fechar manualmente."
+      "fallback": "Se ela não fechar sozinha, pode fechar manualmente."
     },
     "socialComplete": {
       "eyebrow": "Falta bem pouco",
@@ -633,7 +633,8 @@
         "volume": "Volume do player",
         "disablePlayer": "Desligar player",
         "enablePlayer": "Ligar player",
-        "openOnYouTube": "Abrir no YouTube"
+        "openOnYouTube": "Abrir no YouTube",
+        "openOnSoundCloud": "Abrir no SoundCloud"
       },
       "tools": {
         "title": "Ferramentas da sala",
@@ -1056,7 +1057,9 @@
         "historyRetentionHint": "Você escolhe por quantos dias as 50 mensagens mais recentes devem ficar disponíveis."
       },
       "stage": {
-        "emptyDj": "Aguardando DJ"
+        "emptyDj": "Aguardando DJ",
+        "sfwTitle": "Modo SFW ativado",
+        "sfwDescription": "O palco, o background e o player desta sala foram desligados nas suas configurações."
       },
       "player": {
         "emptyTitle": "Nenhuma música tocando",
@@ -1293,6 +1296,7 @@
       },
       "queue": {
         "currentDj": "DJ atual",
+        "nextUp": "Próximo a tocar",
         "waiting": "Na fila",
         "emptyTitle": "Fila vazia",
         "emptyDescription": "Ninguém entrou na fila ainda."
@@ -1490,8 +1494,8 @@
       "INVALID_SUBSCRIPTION_STATUS": "O status da assinatura é inválido.",
       "INVALID_SUBSCRIPTION_CYCLE": "O ciclo da assinatura é inválido.",
       "INVALID_SUBSCRIPTION_DAYS": "A quantidade de dias da assinatura é inválida.",
-      "FOLLOW_SELF_FORBIDDEN": "Você não pode seguir a si mesmo.",
-      "USER_ALREADY_FOLLOWED": "Você já segue este usuário.",
+      "FOLLOW_SELF_FORBIDDEN": "Você não pode virar fã de si mesmo.",
+      "USER_ALREADY_FOLLOWED": "Você já é fã deste usuário.",
       "FRIEND_REQUEST_SELF_FORBIDDEN": "Você não pode enviar pedido de amizade para si mesmo.",
       "FRIENDSHIP_ALREADY_EXISTS": "Esta amizade já existe.",
       "FRIEND_REQUEST_NOT_FOUND": "Solicitação de amizade não encontrada.",
@@ -1655,6 +1659,30 @@
       "loadError": "Não foi possível carregar suas playlists agora.",
       "tracksLoadError": "Não foi possível carregar as faixas desta playlist.",
       "createPlaceholder": "Nova playlist...",
+      "sortLabel": "Ordenação das playlists",
+      "sortReverse": "Inverter ordem",
+      "reorderPlaylistsHint": "Arraste as playlists para definir sua ordem personalizada.",
+      "reorderPlaylistsHandle": "Arrastar playlist",
+      "playlistReorderSuccess": "A ordem das playlists foi atualizada.",
+      "playlistReorderError": "Não foi possível reorganizar suas playlists agora.",
+      "sortModes": {
+        "alphabetical": {
+          "label": "A-Z",
+          "description": "Nome em ordem alfabética."
+        },
+        "activation": {
+          "label": "Ordem de ativação",
+          "description": "Da mais recente tocada até a menos recente."
+        },
+        "created": {
+          "label": "Ordem de criação",
+          "description": "Da mais nova para a mais antiga."
+        },
+        "custom": {
+          "label": "Ordem personalizada",
+          "description": "Arraste para organizar do seu jeito."
+        }
+      },
       "createSuccess": "A playlist {name} foi criada.",
       "createError": "Não foi possível criar a playlist agora.",
       "activeLabel": "Playlist selecionada",
@@ -1705,6 +1733,7 @@
       "trackUnavailableBadge": "Indisponível",
       "trackUnavailableHint": "Essa faixa não está disponível agora e pode ser pulada automaticamente.",
       "playlistPreviewMeta": "{source} · {count} faixa(s)",
+      "playlistPreviewMoreTracks": "+{count} faixa(s) na playlist",
       "trackAdded": "A faixa {title} foi adicionada.",
       "trackAddedByUrl": "O link foi adicionado à playlist.",
       "trackAddError": "Não foi possível adicionar esta faixa.",
@@ -1801,7 +1830,7 @@
       "title": "Amigos",
       "empty": "Nenhum amigo ainda.",
       "emptySubtitle": "Adicione amigos e veja o que eles estão ouvindo.",
-      "subtitle": "Gerencie pedidos de amizade, quem você segue e procure pessoas pelo nome de usuário.",
+      "subtitle": "Gerencie pedidos de amizade, de quem você é fã e procure pessoas pelo nome de usuário.",
       "loading": "Carregando amigos...",
       "loadError": "Não foi possível carregar seus amigos agora.",
       "searchEyebrow": "Encontrar pessoas",
@@ -1809,16 +1838,16 @@
       "searchPlaceholder": "Digite o nome de usuário exato",
       "searchAction": "Buscar",
       "searching": "Buscando...",
-      "searchHint": "Procure uma pessoa pelo nome de usuário exato para seguir ou enviar um pedido de amizade.",
+      "searchHint": "Procure uma pessoa pelo nome de usuário exato para virar fã ou enviar um pedido de amizade.",
       "searchEmpty": "Nenhum perfil carregado",
       "searchError": "Não foi possível encontrar este usuário.",
       "selfSearchError": "Você não pode procurar a si mesmo aqui.",
       "searchMeta": "Nível {level} · {fans, plural, one {# fã} other {# fãs}}",
-      "follow": "Seguir",
-      "unfollow": "Deixar de seguir",
-      "followSuccess": "Agora você está seguindo {username}.",
-      "unfollowSuccess": "Você deixou de seguir {username}.",
-      "followError": "Não foi possível atualizar o follow agora.",
+      "follow": "Virar fã",
+      "unfollow": "Deixar de ser fã",
+      "followSuccess": "Agora você virou fã de {username}.",
+      "unfollowSuccess": "Você deixou de ser fã de {username}.",
+      "followError": "Não foi possível atualizar seu status de fã agora.",
       "addFriend": "Adicionar amigo",
       "requestSent": "Pedido de amizade enviado para {username}.",
       "requestError": "Não foi possível enviar o pedido de amizade.",
@@ -1838,10 +1867,10 @@
       "reject": "Recusar",
       "rejectSuccess": "Você recusou o pedido de {username}.",
       "rejectError": "Não foi possível recusar este pedido.",
-      "followingEyebrow": "Seguindo",
-      "followingTitle": "Pessoas que você segue",
-      "followingEmpty": "Você ainda não segue ninguém.",
-      "followingSubtitle": "Siga usuários para acompanhar melhor sua comunidade.",
+      "followingEyebrow": "Você é fã",
+      "followingTitle": "Pessoas das quais você é fã",
+      "followingEmpty": "Você ainda não virou fã de ninguém.",
+      "followingSubtitle": "Vire fã de usuários para acompanhar melhor sua comunidade.",
       "openProfile": "Ver perfil",
       "closeProfile": "Fechar perfil",
       "loadingProfile": "Carregando perfil...",
@@ -1936,6 +1965,8 @@
         "audienceDisabled": "0 (sem avatares)",
         "audienceOption": "avatares",
         "audiencePreview": "Audiência atual: {count} avatares máximos.",
+        "sfwModeLabel": "Modo SFW",
+        "sfwModeHint": "Desativa o stage, o background e o player das salas nesta conta, sem tocar áudio nem vídeo.",
         "timeFormatLabel": "Formato de hora",
         "timeFormatHint": "Escolha como horários como criação de salas e eventos administrativos devem aparecer para você.",
         "timeFormat24": "24 horas",
@@ -1947,7 +1978,7 @@
         "profilePrivacyTitle": "Privacidade do perfil",
         "profilePrivacyHint": "Escolha quais vínculos sociais e de presença podem aparecer no seu perfil público.",
         "showFanRelationsOnProfile": "Mostrar fãs e pessoas seguidas",
-        "showFanRelationsOnProfileHint": "Permite exibir quem você segue e quem são os fãs deste perfil.",
+        "showFanRelationsOnProfileHint": "Permite exibir de quem você é fã e quem são os fãs deste perfil.",
         "showFriendsOnProfile": "Mostrar amizades",
         "showFriendsOnProfileHint": "Permite exibir sua lista de amigos no perfil público.",
         "showOnlineRoomOnProfile": "Mostrar sala atual quando online",
@@ -2291,6 +2322,11 @@
           "purchaseLocked": "Assinatura ativa",
           "currentPlanCta": "Plano atual"
         }
+      },
+      "pagination": {
+        "previous": "Página anterior",
+        "next": "Próxima página",
+        "pageLabelPrefix": "Página"
       }
     },
     "loadingSession": "Carregando sua sessão...",
@@ -2414,7 +2450,7 @@
         "messagePreview": "Trecho denunciado",
         "noTarget": "Sem alvo disponível",
         "noRoom": "Sem sala vinculada",
-        "roomMeta": "{room} · /{slug}",
+        "roomMeta": "{room} · /~/{slug}",
         "resolve": "Marcar como resolvida",
         "resolving": "Resolvendo...",
         "resolveSuccess": "A denúncia #{id} foi marcada como resolvida.",
@@ -2502,6 +2538,7 @@
       "users": {
         "title": "Usuários",
         "subtitle": "Busque contas, ajuste cargos globais, saldo e progresso direto daqui.",
+        "refresh": "Atualizar usuários",
         "searchPlaceholder": "Buscar por nome de usuário, nome de exibição, e-mail ou ID...",
         "emptySearch": "Nenhum usuário corresponde a esta busca.",
         "filters": {
@@ -2520,6 +2557,8 @@
         "roleSaveError": "Não foi possível atualizar o cargo deste usuário.",
         "rolesSaved": "Cargos globais atualizados com sucesso.",
         "rolesSaveError": "Não foi possível atualizar os cargos globais deste usuário.",
+        "profileSaved": "O perfil de {username} foi atualizado.",
+        "profileSaveError": "Não foi possível salvar o perfil deste usuário.",
         "statsSaved": "Os stats de {username} foram atualizados.",
         "statsSaveError": "Não foi possível salvar os stats deste usuário.",
         "defaultBanReason": "Conta suspensa por um administrador.",
@@ -2540,6 +2579,14 @@
         "sessionsChip": "{value} sessão(ões)",
         "createdAtChip": "Criado em {date}",
         "banReason": "Motivo da suspensão: {reason}",
+        "modalTabs": {
+          "summary": "Resumo",
+          "profile": "Perfil e avatar",
+          "account": "Conta e cargos",
+          "progression": "Progresso",
+          "inventory": "Inventário",
+          "security": "Segurança"
+        },
         "roleSaving": "Salvando...",
         "roleSave": "Salvar cargo",
         "rolesSaving": "Salvando cargos...",
@@ -2626,7 +2673,7 @@
           "allVisibleAlreadyOwned": "Esta conta já possui todos os avatares visíveis.",
           "managedTitle": "Itens removíveis",
           "managedHint": "Mostra apenas itens realmente vinculados a esta conta e que podem ser removidos.",
-          "managedSearchPlaceholder": "Buscar item removÃ­vel",
+          "managedSearchPlaceholder": "Buscar item removível",
           "managedEmpty": "Nenhum item removível nesta categoria.",
           "remove": "Remover",
           "removing": "Removendo...",
@@ -2693,6 +2740,8 @@
           "hint": "Se moedas ou diamantes mudarem ao salvar, o WavezFM anuncia a alteração no chat de {room}.",
           "unavailable": "Abra o painel admin dentro de uma sala para anunciar alterações no chat."
         },
+        "profileSaving": "Salvando perfil...",
+        "profileSave": "Salvar perfil e avatar",
         "statsSaving": "Salvando estatísticas...",
         "statsSave": "Salvar estatísticas",
         "unbanning": "Reativando...",
@@ -2801,48 +2850,48 @@
         },
         "sitewideGifts": {
           "title": "Presentes para todo o site",
-          "subtitle": "Envie um presente para todas as outras contas do WavezFM de uma vez. Quem estiver online recebe a alteracao em tempo real.",
+          "subtitle": "Envie um presente para todas as outras contas do WavezFM de uma vez. Quem estiver online recebe a alteração em tempo real.",
           "realtimeChip": "Tempo real",
           "badgeTitle": "Entregar emblema global",
-          "badgeHint": "Concede o mesmo emblema para todas as outras contas. Quem ja possui o item e ignorado.",
+          "badgeHint": "Concede o mesmo emblema para todas as outras contas. Quem já possui o item é ignorado.",
           "badgePlaceholder": "Buscar emblema para entregar...",
           "badgeAction": "Entregar emblema para todos",
           "badgeSending": "Entregando emblema...",
           "badgeRequired": "Escolha um emblema para presentear o site inteiro.",
-          "badgeSuccess": "{badge} foi entregue para {count} conta(s). {skipped} conta(s) ja possuiam o item e foram ignoradas.",
-          "badgePartial": "{badge} foi entregue para {count} conta(s). {skipped} conta(s) ja possuiam o item e {failed} falharam.",
-          "badgeError": "Nao foi possivel entregar este emblema para o site inteiro agora.",
+          "badgeSuccess": "{badge} foi entregue para {count} conta(s). {skipped} conta(s) já possuíam o item e foram ignoradas.",
+          "badgePartial": "{badge} foi entregue para {count} conta(s). {skipped} conta(s) já possuíam o item e {failed} falharam.",
+          "badgeError": "Não foi possível entregar este emblema para o site inteiro agora.",
           "walletTitle": "Enviar moedas ou diamantes para todos",
           "walletHint": "Adiciona saldo para todas as outras contas sem sobrescrever o valor atual.",
           "walletAction": "Enviar presente global",
           "walletSending": "Enviando presente global...",
           "walletSuccess": "{amount} {currency} foram enviados para {count} conta(s).",
           "walletPartial": "{amount} {currency} foram enviados para {count} conta(s), com {failed} falha(s).",
-          "walletError": "Nao foi possivel enviar este presente global agora.",
+          "walletError": "Não foi possível enviar este presente global agora.",
           "subscriptionTitle": "Presentear assinatura para todos",
-          "subscriptionHint": "Aplica meses de assinatura para todas as outras contas, acumulando por cima de assinaturas ja ativas.",
-          "subscriptionFootnote": "A sua propria conta e ignorada para evitar auto presente.",
+          "subscriptionHint": "Aplica meses de assinatura para todas as outras contas, acumulando por cima de assinaturas já ativas.",
+          "subscriptionFootnote": "A sua própria conta é ignorada para evitar auto presente.",
           "subscriptionAction": "Presentear assinatura global",
           "subscriptionSending": "Presentando assinatura global...",
-          "subscriptionSuccess": "{months} mes(es) de assinatura foram enviados para {count} conta(s).",
-          "subscriptionPartial": "{months} mes(es) de assinatura foram enviados para {count} conta(s), com {failed} falha(s).",
-          "subscriptionError": "Nao foi possivel presentear assinatura para o site inteiro agora.",
+          "subscriptionSuccess": "{months} mês(es) de assinatura foram enviados para {count} conta(s).",
+          "subscriptionPartial": "{months} mês(es) de assinatura foram enviados para {count} conta(s), com {failed} falha(s).",
+          "subscriptionError": "Não foi possível presentear assinatura para o site inteiro agora.",
           "roomSubscriptionTitle": "Presentear sub gift para a sala",
-          "roomSubscriptionHint": "Entrega sub gifts gratis para os usuarios ativos da sala {room} neste instante.",
+          "roomSubscriptionHint": "Entrega sub gifts grátis para os usuários ativos da sala {room} neste instante.",
           "roomSubscriptionChip": "{count} online agora",
           "roomSubscriptionCountLabel": "Quantidade de sub gifts",
-          "roomSubscriptionFootnote": "Cada gift vale 1 mes de assinatura. Sua conta e ignorada e, se houver menos usuarios ativos que o total pedido, o envio usa apenas quem estiver elegivel agora.",
+          "roomSubscriptionFootnote": "Cada gift vale 1 mês de assinatura. Sua conta é ignorada e, se houver menos usuários ativos que o total pedido, o envio usa apenas quem estiver elegível agora.",
           "roomSubscriptionAction": "Presentear sub gift na sala",
           "roomSubscriptionSending": "Enviando sub gift para a sala...",
           "roomSubscriptionSuccess": "{count} sub gift(s) foram enviados na sala {room}.",
-          "roomSubscriptionCapped": "{count} sub gift(s) foram enviados na sala {room}. Voce pediu {requested}, mas nao havia mais usuarios ativos elegiveis agora.",
+          "roomSubscriptionCapped": "{count} sub gift(s) foram enviados na sala {room}. Você pediu {requested}, mas não havia mais usuários ativos elegíveis agora.",
           "roomSubscriptionPartial": "{count} sub gift(s) foram enviados na sala {room}, com {failed} falha(s).",
-          "roomSubscriptionError": "Nao foi possivel presentear sub gifts para esta sala agora.",
+          "roomSubscriptionError": "Não foi possível presentear sub gifts para esta sala agora.",
           "roomSubscriptionCountInvalid": "Informe entre 1 e 100 sub gifts.",
           "roomSubscriptionUnavailable": "Abra o admin dentro de uma sala para presentear sub gifts nela.",
-          "amountInvalid": "Informe uma quantidade valida maior que zero.",
+          "amountInvalid": "Informe uma quantidade válida maior que zero.",
           "monthsInvalid": "Informe entre 1 e 12 meses.",
-          "note": "Esses presentes globais sempre ignoram a sua propria conta e sao enviados em lotes para manter o realtime estavel."
+          "note": "Esses presentes globais sempre ignoram a sua própria conta e são enviados em lotes para manter o realtime estável."
         }
       },
       "rooms": {
@@ -2956,6 +3005,8 @@
       },
       "tabs": {
         "users": "Usuários",
+        "system": "Sistema",
+        "subscribers": "Assinantes",
         "bots": "Bots",
         "rooms": "Salas",
         "reports": "Denúncias",
@@ -3006,6 +3057,42 @@
           "status": "Status",
           "created": "Criado em",
           "actions": "Ações"
+        }
+      },
+      "subscribers": {
+        "title": "Lista de assinantes",
+        "subtitle": "Acompanhe quem está com assinatura ativa, quando começou, quando termina e se a renovação automática continua ligada.",
+        "count": "{count} assinante(s) ativo(s)",
+        "searchPlaceholder": "Buscar por usuário, ID ou tipo de assinatura...",
+        "empty": "Nenhum assinante ativo foi encontrado agora.",
+        "emptySearch": "Nenhum assinante corresponde a esta busca.",
+        "notAvailable": "Não informado",
+        "table": {
+          "user": "Usuário",
+          "type": "Tipo",
+          "renewal": "Renovação",
+          "startedAt": "Assinou em",
+          "endsAt": "Termina em",
+          "remaining": "Tempo restante"
+        },
+        "cycle": {
+          "monthly": "Mensal",
+          "annual": "Anual",
+          "manual": "Manual / gift",
+          "unknown": "Desconhecido"
+        },
+        "renewal": {
+          "on": "Auto-renovação ligada",
+          "off": "Auto-renovação desligada"
+        },
+        "remaining": {
+          "unknown": "Sem prazo definido",
+          "expired": "Expirada",
+          "daysHours": "{days}d {hours}h",
+          "days": "{days}d",
+          "hoursMinutes": "{hours}h {minutes}m",
+          "hours": "{hours}h",
+          "minutes": "{minutes}m"
         }
       },
       "progression": {
@@ -3078,6 +3165,22 @@
         "title": "Configurações do sistema",
         "subtitle": "Ajuste comportamentos globais da plataforma, da progressão e da reconexão das salas.",
         "updatedAtLabel": "Última atualização:",
+        "tabs": {
+          "settings": "Configurações do sistema",
+          "settingsDescription": "Manutenção, cooldowns, loja, perks e toggles globais da plataforma.",
+          "roleLimits": "Limites de cargos por sala",
+          "roleLimitsDescription": "Controle os limites automáticos de atribuição de cargos nas salas.",
+          "chatMedia": "Blacklist global de mídia no chat",
+          "chatMediaDescription": "Gerencie padrões bloqueados para links e embeds de mídia no chat.",
+          "donation": "Meta global de doação",
+          "donationDescription": "Ajuste textos, valores e comportamento da meta global do site.",
+          "gifts": "Presentes para todo o site",
+          "giftsDescription": "Distribua assinaturas, moedas, diamantes e emblemas em massa.",
+          "alerts": "Alertas globais",
+          "alertsDescription": "Crie e edite alertas globais por idioma para todo o site.",
+          "realtime": "Realtime e diagnósticos",
+          "realtimeDescription": "Monitore filas, redis, locks e o estado distribuído das salas."
+        },
         "maintenanceTitle": "Modo de manutenção",
         "maintenanceSubtitle": "Bloqueia o acesso ao site para todos, exceto admins e developers.",
         "enabled": "Ativo",
@@ -3239,12 +3342,14 @@
         "subscriberPerksCatalogBadge": "Emblemas premium",
         "subscriberPerksCatalogBackground": "Fundos premium",
         "subscriberPerksCatalogVideoFrame": "Videoframes premium",
-        "subscriberPerksSubscriptionBadgeTitle": "Badge da assinatura",
-        "subscriberPerksSubscriptionBadgeSubtitle": "Escolha a badge entregue automaticamente assim que a assinatura entrar em vigor.",
-        "subscriberPerksSubscriptionBadgeLabel": "Badge automática",
-        "subscriberPerksSubscriptionBadgeHint": "A badge aparece imediatamente para quem já tem assinatura ativa e para novos presentes ou ativações.",
-        "subscriberPerksSubscriptionBadgeNone": "Sem badge automática",
+        "subscriberPerksSubscriptionBadgeTitle": "Badges da assinatura",
+        "subscriberPerksSubscriptionBadgeSubtitle": "Escolha quais badges são entregues automaticamente assim que a assinatura entrar em vigor.",
+        "subscriberPerksSubscriptionBadgeLabel": "Adicionar badge automática",
+        "subscriberPerksSubscriptionBadgeAddPlaceholder": "Adicionar badge da assinatura",
+        "subscriberPerksSubscriptionBadgeHint": "As badges aparecem imediatamente para quem já tem assinatura ativa e para novos presentes ou ativações.",
+        "subscriberPerksSubscriptionBadgeNone": "Sem badges automáticas",
         "subscriberPerksSubscriptionBadgeNoneHint": "Nenhuma badge extra será concedida pela assinatura.",
+        "subscriberPerksSubscriptionBadgeRemove": "Remover {badge}",
         "subscriberPerksPlaylistsTitle": "Limites de playlist",
         "subscriberPerksPlaylistsSubtitle": "Defina quantas faixas contas free e assinantes podem manter por playlist.",
         "subscriberPerksRoomsTitle": "Limites de salas",
@@ -3708,7 +3813,7 @@
           "categoryPlaceholder": "special-milestones",
           "triggerThreshold": "Threshold",
           "triggerThresholdPlaceholder": "1",
-          "triggerThresholdHint": "Quantidade minima necessaria para desbloquear. Ex.: 1 faixa tocada de madrugada ou 100 curtidas recebidas.",
+          "triggerThresholdHint": "Quantidade mínima necessária para desbloquear. Ex.: 1 faixa tocada de madrugada ou 100 curtidas recebidas.",
           "hourStart": "Data inicial",
           "hourEnd": "Data final",
           "hourWindowHint": "Deixe ambos vazios para a conquista valer a qualquer momento. Se preencher, use uma data inicial e final reais. Aceita 27/03/2026 14:40, 27/03/2026 2:40 PM ou 2026-03-27T14:40.",
@@ -3730,8 +3835,17 @@
         "empty": "Nenhum alerta global está ativo no momento.",
         "titleLabel": "Título",
         "messageLabel": "Mensagem",
+        "titlePtBrLabel": "Título (pt-BR)",
+        "titleEnUsLabel": "Título (en-US)",
+        "messagePtBrLabel": "Mensagem (pt-BR)",
+        "messageEnUsLabel": "Mensagem (en-US)",
         "titlePlaceholder": "Ex.: Manutenção programada",
         "messagePlaceholder": "Escreva o alerta global que deve aparecer em todas as salas.",
+        "titlePtBrPlaceholder": "Ex.: Manutenção programada",
+        "titleEnUsPlaceholder": "Ex.: Scheduled maintenance",
+        "messagePtBrPlaceholder": "Escreva o alerta global em português.",
+        "messageEnUsPlaceholder": "Write the global alert in English.",
+        "previewingAs": "Prévia em {locale}: {title}",
         "pinLabel": "Fixar no topo do chat",
         "pinHint": "Mantém o alerta visível no topo da sala e também envia no chat como alerta do sistema.",
         "chatOnlyHint": "Envia somente no chat como alerta do sistema, sem fixar a mensagem no topo.",
@@ -3770,7 +3884,7 @@
         "messagePreview": "Trecho denunciado",
         "noTarget": "Sem alvo disponível",
         "noRoom": "Sem sala vinculada",
-        "roomMeta": "{room} · /{slug}",
+        "roomMeta": "{room} · /~/{slug}",
         "resolve": "Marcar como resolvida",
         "resolving": "Resolvendo...",
         "resolveSuccess": "A denúncia #{id} foi marcada como resolvida.",
@@ -3964,16 +4078,16 @@
         "clearLogs": "Limpar registros",
         "deleteAnnouncement": "Apagar alerta",
         "giftAllBadgeTitle": "Entregar emblema para todo o site",
-        "giftAllBadgeDescription": "Deseja entregar {badge} para todas as outras contas do WavezFM? A sua conta sera ignorada e o presente entra em vigor em tempo real.",
+        "giftAllBadgeDescription": "Deseja entregar {badge} para todas as outras contas do WavezFM? A sua conta será ignorada e o presente entra em vigor em tempo real.",
         "giftAllWalletTitle": "Enviar saldo para todo o site",
-        "giftAllWalletDescription": "Deseja enviar {amount} {currency} para todas as outras contas do WavezFM? A sua conta sera ignorada e quem estiver online recebe a atualizacao em tempo real.",
+        "giftAllWalletDescription": "Deseja enviar {amount} {currency} para todas as outras contas do WavezFM? A sua conta será ignorada e quem estiver online recebe a atualização em tempo real.",
         "giftAllSubscriptionTitle": "Presentear assinatura para todo o site",
-        "giftAllSubscriptionDescription": "Deseja presentear {months} mes(es) de assinatura para todas as outras contas do WavezFM? A sua conta sera ignorada e o tempo e aplicado em tempo real.",
+        "giftAllSubscriptionDescription": "Deseja presentear {months} mês(es) de assinatura para todas as outras contas do WavezFM? A sua conta será ignorada e o tempo é aplicado em tempo real.",
         "giftAllBadge": "Entregar emblema",
         "giftAllWallet": "Enviar saldo",
         "giftAllSubscription": "Presentear assinatura",
         "giftRoomSubscriptionTitle": "Presentear sub gift para a sala",
-        "giftRoomSubscriptionDescription": "Deseja enviar ate {count} sub gift(s) gratis na sala {room}? A sua conta sera ignorada e os presentes vao para os usuarios ativos da sala neste instante.",
+        "giftRoomSubscriptionDescription": "Deseja enviar até {count} sub gift(s) grátis na sala {room}? A sua conta será ignorada e os presentes vão para os usuários ativos da sala neste instante.",
         "giftRoomSubscription": "Presentear sala",
         "deleteRoomBotTitle": "Revogar bot de sala",
         "deleteRoomBotDescription": "Deseja revogar o bot {name}? O token deixa de funcionar imediatamente.",
@@ -4051,7 +4165,9 @@
         "title": "Sala atual",
         "subtitle": "Se esta pessoa estiver online e permitir, você pode ver onde ela está agora.",
         "join": "Ir para a sala",
-        "empty": "Nenhuma sala pública disponível para mostrar agora."
+        "empty": "Nenhuma sala pública disponível para mostrar agora.",
+        "peopleCount": "{count, plural, one {# na sala} other {# na sala}}",
+        "queueCount": "{count, plural, one {# na fila} other {# na fila}}"
       },
       "recentTracks": {
         "title": "Últimas músicas tocadas",
@@ -4062,11 +4178,18 @@
       "social": {
         "sectionTitle": "Conexões",
         "followersTitle": "Fãs ({count})",
-        "followingTitle": "Seguindo ({count})",
+        "followingTitle": "É fã de ({count})",
         "friendsTitle": "Amigos ({count})",
         "followersEmpty": "Nenhum fã público para mostrar por enquanto.",
-        "followingEmpty": "Este usuário ainda não segue ninguém publicamente.",
+        "followingEmpty": "Este usuário ainda não é fã de ninguém publicamente.",
         "friendsEmpty": "Nenhuma amizade pública para mostrar no momento."
+      },
+      "actions": {
+        "friends": "Amigos",
+        "becomeFan": "Virar fã",
+        "unfan": "Deixar de ser fã",
+        "becomeFanSuccess": "Agora você virou fã de {username}.",
+        "unfanSuccess": "Você deixou de ser fã de {username}."
       }
     },
     "myStuff": {
@@ -4190,11 +4313,11 @@
         },
         "cookies": {
           "title": "3. Cookies",
-          "body": "Os cookies ajudam a manter sua sessão, leWavezferências e garantir o funcionamento correto de áreas autenticadas do site."
+          "body": "Os cookies ajudam a manter sua sessão, lembrar preferências e garantir o funcionamento correto de áreas autenticadas do site."
         },
         "sharing": {
           "title": "4. Compartilhamento",
-          "body": "Não vendemWavezados. Podemos compartilhar informações apenas com provedores essenciais para login, infraestrutura, segurança e envio de e-mails."
+          "body": "Não vendemos seus dados. Podemos compartilhar informações apenas com provedores essenciais para login, infraestrutura, segurança e envio de e-mails."
         },
         "contact": {
           "title": "5. Contato",
@@ -4217,7 +4340,7 @@
         },
         "content": {
           "title": "3. Conteúdo e comportamento",
-          "body": "Não é permitido usar a plataformaWavezédio, fraude, spam, evasão de punições, conteúdo ilegal ou qualquer comportamento que prejudique a comunidade."
+          "body": "Não é permitido usar a plataforma para assédio, fraude, spam, evasão de punições, conteúdo ilegal ou qualquer comportamento que prejudique a comunidade."
         },
         "moderation": {
           "title": "4. Moderação",

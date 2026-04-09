@@ -627,7 +627,8 @@
         "volume": "Player volume",
         "disablePlayer": "Turn player off",
         "enablePlayer": "Turn player on",
-        "openOnYouTube": "Open on YouTube"
+        "openOnYouTube": "Open on YouTube",
+        "openOnSoundCloud": "Open on SoundCloud"
       },
       "tools": {
         "title": "Room tools",
@@ -1050,7 +1051,9 @@
         "historyRetentionHint": "Choose how many days the 50 most recent messages should remain available."
       },
       "stage": {
-        "emptyDj": "Waiting for DJ"
+        "emptyDj": "Waiting for DJ",
+        "sfwTitle": "SFW mode enabled",
+        "sfwDescription": "The room stage, background, and player were turned off from your account settings."
       },
       "player": {
         "emptyTitle": "No track playing",
@@ -1287,6 +1290,7 @@
       },
       "queue": {
         "currentDj": "Current DJ",
+        "nextUp": "Up next",
         "waiting": "In queue",
         "emptyTitle": "Queue is empty",
         "emptyDescription": "Nobody has joined the queue yet."
@@ -1484,8 +1488,8 @@
       "INVALID_SUBSCRIPTION_STATUS": "The subscription status is invalid.",
       "INVALID_SUBSCRIPTION_CYCLE": "The subscription cycle is invalid.",
       "INVALID_SUBSCRIPTION_DAYS": "The subscription day count is invalid.",
-      "FOLLOW_SELF_FORBIDDEN": "You cannot follow yourself.",
-      "USER_ALREADY_FOLLOWED": "You already follow this user.",
+      "FOLLOW_SELF_FORBIDDEN": "You cannot become a fan of yourself.",
+      "USER_ALREADY_FOLLOWED": "You are already a fan of this user.",
       "FRIEND_REQUEST_SELF_FORBIDDEN": "You cannot send a friend request to yourself.",
       "FRIENDSHIP_ALREADY_EXISTS": "This friendship already exists.",
       "FRIEND_REQUEST_NOT_FOUND": "Friend request not found.",
@@ -1649,6 +1653,30 @@
       "loadError": "We could not load your playlists right now.",
       "tracksLoadError": "We could not load the tracks for this playlist.",
       "createPlaceholder": "New playlist...",
+      "sortLabel": "Playlist sorting",
+      "sortReverse": "Reverse order",
+      "reorderPlaylistsHint": "Drag playlists to define your custom order.",
+      "reorderPlaylistsHandle": "Drag playlist",
+      "playlistReorderSuccess": "The playlist library order was updated.",
+      "playlistReorderError": "We could not reorder your playlists right now.",
+      "sortModes": {
+        "alphabetical": {
+          "label": "A-Z",
+          "description": "Name in alphabetical order."
+        },
+        "activation": {
+          "label": "Activation order",
+          "description": "From most recently played to least recent."
+        },
+        "created": {
+          "label": "Creation order",
+          "description": "From newest to oldest."
+        },
+        "custom": {
+          "label": "Custom order",
+          "description": "Drag to organize your own way."
+        }
+      },
       "createSuccess": "The playlist {name} was created.",
       "createError": "We could not create this playlist right now.",
       "activeLabel": "Selected playlist",
@@ -1699,6 +1727,7 @@
       "trackUnavailableBadge": "Unavailable",
       "trackUnavailableHint": "This track is currently unavailable and may be skipped automatically.",
       "playlistPreviewMeta": "{source} · {count} tracks",
+      "playlistPreviewMoreTracks": "+{count} track(s) in this playlist",
       "trackAdded": "The track {title} was added.",
       "trackAddedByUrl": "The link was added to the playlist.",
       "trackAddError": "We could not add this track.",
@@ -1803,16 +1832,16 @@
       "searchPlaceholder": "Type the exact username",
       "searchAction": "Search",
       "searching": "Searching...",
-      "searchHint": "Look up someone by their exact username to follow them or send a friend request.",
+      "searchHint": "Look up someone by their exact username to become a fan or send a friend request.",
       "searchEmpty": "No profile loaded",
       "searchError": "We could not find this user.",
       "selfSearchError": "You cannot search for yourself here.",
       "searchMeta": "Level {level} · {fans, plural, one {# fan} other {# fans}}",
-      "follow": "Follow",
-      "unfollow": "Unfollow",
-      "followSuccess": "You are now following {username}.",
-      "unfollowSuccess": "You stopped following {username}.",
-      "followError": "We could not update the follow state right now.",
+      "follow": "Become fan",
+      "unfollow": "Stop being a fan",
+      "followSuccess": "You are now a fan of {username}.",
+      "unfollowSuccess": "You stopped being a fan of {username}.",
+      "followError": "We could not update your fan status right now.",
       "addFriend": "Add friend",
       "requestSent": "Friend request sent to {username}.",
       "requestError": "We could not send this friend request.",
@@ -1832,10 +1861,10 @@
       "reject": "Reject",
       "rejectSuccess": "You rejected {username}'s request.",
       "rejectError": "We could not reject this request.",
-      "followingEyebrow": "Following",
-      "followingTitle": "People you follow",
-      "followingEmpty": "You are not following anyone yet.",
-      "followingSubtitle": "Follow users to keep up with your community.",
+      "followingEyebrow": "Fan of",
+      "followingTitle": "People you are a fan of",
+      "followingEmpty": "You are not a fan of anyone yet.",
+      "followingSubtitle": "Become a fan of users to keep up with your community.",
       "openProfile": "View profile",
       "closeProfile": "Close profile",
       "loadingProfile": "Loading profile...",
@@ -1948,6 +1977,8 @@
         "audienceDisabled": "0 (no avatars)",
         "audienceOption": "avatars",
         "audiencePreview": "Current audience: up to {count} avatars.",
+        "sfwModeLabel": "SFW mode",
+        "sfwModeHint": "Turns off the room stage, background, and player for this account, without playing any audio or video.",
         "timeFormatLabel": "Time format",
         "timeFormatHint": "Choose how room timestamps and admin dates should appear for you.",
         "timeFormat24": "24-hour",
@@ -1958,7 +1989,7 @@
         "timeFormatSaved": "Your time format was updated.",
         "profilePrivacyTitle": "Profile privacy",
         "profilePrivacyHint": "Choose which social and presence details can appear on your public profile.",
-        "showFanRelationsOnProfile": "Show fans and following",
+        "showFanRelationsOnProfile": "Show fans and fan-of",
         "showFanRelationsOnProfileHint": "Lets people see who you follow and who follows this profile.",
         "showFriendsOnProfile": "Show friends",
         "showFriendsOnProfileHint": "Lets people see your friends list on the public profile.",
@@ -2426,7 +2457,7 @@
         "messagePreview": "Reported excerpt",
         "noTarget": "No target available",
         "noRoom": "No room linked",
-        "roomMeta": "{room} · /{slug}",
+        "roomMeta": "{room} · /~/{slug}",
         "resolve": "Mark as resolved",
         "resolving": "Resolving...",
         "resolveSuccess": "Report #{id} was marked as resolved.",
@@ -2509,6 +2540,7 @@
       "users": {
         "title": "Users",
         "subtitle": "Search accounts and adjust global roles, balances, and progression from here.",
+        "refresh": "Refresh users",
         "searchPlaceholder": "Search by username, display name, email, or ID...",
         "emptySearch": "No user matches this search.",
         "filters": {
@@ -2527,6 +2559,8 @@
         "roleSaveError": "We couldn't update this user's role.",
         "rolesSaved": "Global roles updated successfully.",
         "rolesSaveError": "We couldn't update this user's global roles.",
+        "profileSaved": "{username}'s profile was updated.",
+        "profileSaveError": "We couldn't save this user's profile.",
         "statsSaved": "{username} stats were updated.",
         "statsSaveError": "We couldn't save this user's stats.",
         "defaultBanReason": "Account suspended by an administrator.",
@@ -2547,6 +2581,14 @@
         "sessionsChip": "{value} session(s)",
         "createdAtChip": "Created on {date}",
         "banReason": "Suspension reason: {reason}",
+        "modalTabs": {
+          "summary": "Summary",
+          "profile": "Profile & avatar",
+          "account": "Account & roles",
+          "progression": "Progression",
+          "inventory": "Inventory",
+          "security": "Security"
+        },
         "roleSaving": "Saving...",
         "roleSave": "Save role",
         "rolesSaving": "Saving roles...",
@@ -2700,6 +2742,8 @@
           "hint": "If coins or diamonds change when you save, WavezFM will announce the update in {room}'s chat.",
           "unavailable": "Open the admin panel inside a room if you want to announce these changes in chat."
         },
+        "profileSaving": "Saving profile...",
+        "profileSave": "Save profile & avatar",
         "statsSaving": "Saving stats...",
         "statsSave": "Save stats",
         "unbanning": "Reactivating...",
@@ -2963,6 +3007,8 @@
       },
       "tabs": {
         "users": "Users",
+        "system": "System",
+        "subscribers": "Subscribers",
         "bots": "Bots",
         "rooms": "Rooms",
         "reports": "Reports",
@@ -3013,6 +3059,42 @@
           "status": "Status",
           "created": "Created on",
           "actions": "Actions"
+        }
+      },
+      "subscribers": {
+        "title": "Subscriber list",
+        "subtitle": "Track who currently has an active subscription, when it started, when it ends, and whether auto-renew is still enabled.",
+        "count": "{count} active subscriber(s)",
+        "searchPlaceholder": "Search by user, ID, or subscription type...",
+        "empty": "No active subscribers were found right now.",
+        "emptySearch": "No subscriber matches this search.",
+        "notAvailable": "Not provided",
+        "table": {
+          "user": "User",
+          "type": "Type",
+          "renewal": "Renewal",
+          "startedAt": "Started on",
+          "endsAt": "Ends on",
+          "remaining": "Time left"
+        },
+        "cycle": {
+          "monthly": "Monthly",
+          "annual": "Annual",
+          "manual": "Manual / gift",
+          "unknown": "Unknown"
+        },
+        "renewal": {
+          "on": "Auto-renew on",
+          "off": "Auto-renew off"
+        },
+        "remaining": {
+          "unknown": "No defined end",
+          "expired": "Expired",
+          "daysHours": "{days}d {hours}h",
+          "days": "{days}d",
+          "hoursMinutes": "{hours}h {minutes}m",
+          "hours": "{hours}h",
+          "minutes": "{minutes}m"
         }
       },
       "progression": {
@@ -3085,6 +3167,22 @@
         "title": "System settings",
         "subtitle": "Adjust global platform behavior, progression, and room reconnection timing.",
         "updatedAtLabel": "Last updated:",
+        "tabs": {
+          "settings": "System settings",
+          "settingsDescription": "Maintenance, cooldowns, store toggles, perks, and core platform switches.",
+          "roleLimits": "Room role limits",
+          "roleLimitsDescription": "Control automatic role-assignment limits inside rooms.",
+          "chatMedia": "Global chat media blacklist",
+          "chatMediaDescription": "Manage blocked patterns for media links and embeds in chat.",
+          "donation": "Global donation goal",
+          "donationDescription": "Adjust copy, targets, and behavior for the site's global donation goal.",
+          "gifts": "Sitewide gifts",
+          "giftsDescription": "Distribute subscriptions, coins, diamonds, and badges across the whole site.",
+          "alerts": "Global alerts",
+          "alertsDescription": "Create and edit localized global alerts for the entire site.",
+          "realtime": "Realtime diagnostics",
+          "realtimeDescription": "Monitor queues, Redis, locks, and distributed room state."
+        },
         "maintenanceTitle": "Maintenance mode",
         "maintenanceSubtitle": "Blocks site access for everyone except admins and developers.",
         "enabled": "Enabled",
@@ -3246,12 +3344,14 @@
         "subscriberPerksCatalogBadge": "Premium badges",
         "subscriberPerksCatalogBackground": "Premium backgrounds",
         "subscriberPerksCatalogVideoFrame": "Premium videoframes",
-        "subscriberPerksSubscriptionBadgeTitle": "Subscription badge",
-        "subscriberPerksSubscriptionBadgeSubtitle": "Choose which badge is granted automatically as soon as the subscription becomes active.",
-        "subscriberPerksSubscriptionBadgeLabel": "Automatic badge",
-        "subscriberPerksSubscriptionBadgeHint": "The badge appears immediately for users who already have an active subscription and for new gifts or activations.",
-        "subscriberPerksSubscriptionBadgeNone": "No automatic badge",
+        "subscriberPerksSubscriptionBadgeTitle": "Subscription badges",
+        "subscriberPerksSubscriptionBadgeSubtitle": "Choose which badges are granted automatically as soon as the subscription becomes active.",
+        "subscriberPerksSubscriptionBadgeLabel": "Add automatic badge",
+        "subscriberPerksSubscriptionBadgeAddPlaceholder": "Add subscription badge",
+        "subscriberPerksSubscriptionBadgeHint": "The badges appear immediately for users who already have an active subscription and for new gifts or activations.",
+        "subscriberPerksSubscriptionBadgeNone": "No automatic badges",
         "subscriberPerksSubscriptionBadgeNoneHint": "No extra badge will be granted by the subscription.",
+        "subscriberPerksSubscriptionBadgeRemove": "Remove {badge}",
         "subscriberPerksPlaylistsTitle": "Playlist limits",
         "subscriberPerksPlaylistsSubtitle": "Define how many tracks free and subscriber accounts can keep in each playlist.",
         "subscriberPerksRoomsTitle": "Room limits",
@@ -3737,8 +3837,17 @@
         "empty": "There is no active global alert right now.",
         "titleLabel": "Title",
         "messageLabel": "Message",
+        "titlePtBrLabel": "Title (pt-BR)",
+        "titleEnUsLabel": "Title (en-US)",
+        "messagePtBrLabel": "Message (pt-BR)",
+        "messageEnUsLabel": "Message (en-US)",
         "titlePlaceholder": "Ex.: Scheduled maintenance",
         "messagePlaceholder": "Write the global alert that should appear in every room.",
+        "titlePtBrPlaceholder": "Ex.: Manutenção programada",
+        "titleEnUsPlaceholder": "Ex.: Scheduled maintenance",
+        "messagePtBrPlaceholder": "Write the global alert in Portuguese.",
+        "messageEnUsPlaceholder": "Write the global alert in English.",
+        "previewingAs": "Preview in {locale}: {title}",
         "pinLabel": "Pin at the top of chat",
         "pinHint": "Keeps the alert visible at the top of the room and also sends it in chat as a system alert.",
         "chatOnlyHint": "Sends it only in chat as a system alert, without pinning it at the top.",
@@ -3777,7 +3886,7 @@
         "messagePreview": "Reported excerpt",
         "noTarget": "No target available",
         "noRoom": "No room linked",
-        "roomMeta": "{room} · /{slug}",
+        "roomMeta": "{room} · /~/{slug}",
         "resolve": "Mark as resolved",
         "resolving": "Resolving...",
         "resolveSuccess": "Report #{id} was marked as resolved.",
@@ -4063,7 +4172,9 @@
         "title": "Current room",
         "subtitle": "If this person is online and allows it, you can see where they are right now.",
         "join": "Go to room",
-        "empty": "No public room is available to show right now."
+        "empty": "No public room is available to show right now.",
+        "peopleCount": "{count, plural, one {# in room} other {# in room}}",
+        "queueCount": "{count, plural, one {# in queue} other {# in queue}}"
       },
       "recentTracks": {
         "title": "Recently played tracks",
@@ -4074,11 +4185,18 @@
       "social": {
         "sectionTitle": "Connections",
         "followersTitle": "Fans ({count})",
-        "followingTitle": "Following ({count})",
+        "followingTitle": "Fan of ({count})",
         "friendsTitle": "Friends ({count})",
         "followersEmpty": "No public fans to show yet.",
-        "followingEmpty": "This user is not following anyone publicly yet.",
+        "followingEmpty": "This user is not publicly a fan of anyone yet.",
         "friendsEmpty": "No public friends to show right now."
+      },
+      "actions": {
+        "friends": "Friends",
+        "becomeFan": "Become fan",
+        "unfan": "Stop being a fan",
+        "becomeFanSuccess": "You are now a fan of {username}.",
+        "unfanSuccess": "You stopped being a fan of {username}."
       }
     },
     "myStuff": {
