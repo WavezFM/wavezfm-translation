@@ -1317,7 +1317,7 @@
                         "description": "Позволяет регулярные сообщения в чате в комнате."
                     },
                     "join_queue": {
-                        "label": "Присоединиться к очереди",
+                        "label": "В очередь",
                         "description": "Позволяет присоединиться к очереди DJ."
                     },
                     "bypass_queue_lock": {
@@ -1577,20 +1577,20 @@
                 "soundcloudDisabledDescription": "SoundCloud был отключен глобально из панели администратора."
             },
             "queueAction": {
-                "leaveBooth": "Покинуть будку",
-                "leaveQueue": "Покинуть очередь",
-                "skipTurn": "Пропустить поворот",
-                "enterQueue": "Присоединиться к очереди",
-                "queueFull": "Лист ожидания заполнен",
+                "leaveBooth": "Выйти из DJ",
+                "leaveQueue": "Выйти из очереди",
+                "skipTurn": "Пропустить ход",
+                "enterQueue": "В очередь",
+                "queueFull": "Очередь полна",
                 "queueLocked": "Очередь заблокирована",
-                "booth": "Активный стенд",
-                "externalMedia": "Внешние СМИ",
+                "booth": "DJ сейчас",
+                "externalMedia": "Медиа",
                 "locked": "Заблокировано",
                 "turn": "Ваша очередь",
-                "eta": "Расчетное время прибытия: {time}",
-                "etaNow": "Расчетное время прибытия: сейчас",
-                "etaLive": "Расчетное время прибытия: после прямого эфира",
-                "etaUnknown": "Расчетное время прибытия: —"
+                "eta": "ETA: {time}",
+                "etaNow": "ETA: сейчас",
+                "etaLive": "ETA: после эфира",
+                "etaUnknown": "ETA: —"
             },
             "queueDialog": {
                 "currentDjTitle": "Что ты хочешь делать?",
@@ -2244,13 +2244,13 @@
             },
             "roles": {
                 "user": "Пользователь",
-                "verified": "Проверено",
-                "subscriber": "подписчик",
-                "resident_dj": "Резидент DJ",
-                "bouncer": "Вышибала",
-                "manager": "Менеджер",
-                "cohost": "Соведущий",
-                "host": "Хозяин"
+                "verified": "Verified",
+                "subscriber": "Subscriber",
+                "resident_dj": "Resident DJ",
+                "bouncer": "Bouncer",
+                "manager": "Manager",
+                "cohost": "Co-Host",
+                "host": "Host"
             },
             "mentionTargets": {
                 "everyone": "Вся комната",
@@ -2258,12 +2258,12 @@
             },
             "platform": {
                 "none": "Член",
-                "admin": "Админ",
-                "ambassador": "посол",
+                "admin": "Admin",
+                "ambassador": "Ambassador",
                 "bot": "Робот",
-                "developer": "Разработчик",
-                "verified": "Проверено",
-                "subscriber": "подписчик"
+                "developer": "Developer",
+                "verified": "Verified",
+                "subscriber": "Subscriber"
             },
             "status": {
                 "online": "Онлайн",
@@ -2285,17 +2285,17 @@
             },
             "actions": {
                 "becomeFan": "Стать фанатом",
-                "unfan": "Снимите фанат",
+                "unfan": "Не фанат",
                 "mention": "Упомянуть",
                 "whisper": "Шепот",
-                "viewProfile": "Посмотреть профиль",
+                "viewProfile": "Профиль",
                 "reportUser": "Отчет",
-                "removeFromQueue": "Удалить из очереди",
+                "removeFromQueue": "Из очереди",
                 "skipTrack": "Пропустить трек",
-                "kick": "Пинать",
+                "kick": "Кик",
                 "mute": "Немой",
                 "unmute": "Включить звук",
-                "ban": "Запретить выход из комнаты",
+                "ban": "Бан",
                 "setAsHostSuccess": "{username} теперь новый хозяин комнаты.",
                 "role": "Роль комнаты",
                 "hostTransferHint": "Чтобы понизить этот хост, сначала назначьте ответственным за комнату другого человека."
@@ -4136,12 +4136,12 @@
             "restrictedSubtitle": "Эта часть панели управления доступна только администраторам WavezFM.",
             "roles": {
                 "none": "Член",
-                "admin": "Админ",
-                "ambassador": "посол",
+                "admin": "Admin",
+                "ambassador": "Ambassador",
                 "bot": "Бот",
-                "developer": "Разработчик",
-                "verified": "Проверено",
-                "subscriber": "подписчик"
+                "developer": "Developer",
+                "verified": "Verified",
+                "subscriber": "Subscriber"
             },
             "stats": {
                 "title": "Статус платформы",
@@ -4648,10 +4648,10 @@
                     "invalid": "Введите значения от 0 до 10000.",
                     "systemDefault": "Системная настройка по умолчанию: {count}",
                     "roles": {
-                        "resident_dj": "Резиденты-диджеи",
-                        "bouncer": "Вышибалы",
-                        "manager": "Менеджеры",
-                        "cohost": "Соведущие"
+                        "resident_dj": "Resident DJs",
+                        "bouncer": "Bouncers",
+                        "manager": "Managers",
+                        "cohost": "Co-hosts"
                     }
                 },
                 "staffChatAccess": {
@@ -4661,10 +4661,10 @@
                     "allowed": "Доступ разрешен",
                     "blocked": "Доступ заблокирован",
                     "roles": {
-                        "resident_dj": "Резиденты-диджеи",
-                        "bouncer": "Вышибалы",
-                        "manager": "Менеджеры",
-                        "cohost": "Соведущие"
+                        "resident_dj": "Resident DJs",
+                        "bouncer": "Bouncers",
+                        "manager": "Managers",
+                        "cohost": "Co-hosts"
                     }
                 },
                 "theme": {
@@ -5443,11 +5443,11 @@
                 "roleNameGlowUsersPlaceholder": "Поиск пользователя по имени, адресу электронной почты или идентификатору",
                 "roleNameGlowUsersEmpty": "Найдите здесь пользователя, чтобы добавить или удалить выбранных пользователей.",
                 "roleNameGlowNoUsers": "Пользователи не найдены.",
-                "roleNameGlowRoleAdmin": "Админ",
-                "roleNameGlowRoleDeveloper": "Разработчик",
-                "roleNameGlowRoleAmbassador": "посол",
-                "roleNameGlowRoleVerified": "Проверено",
-                "roleNameGlowRoleSubscriber": "подписчик",
+                "roleNameGlowRoleAdmin": "Admin",
+                "roleNameGlowRoleDeveloper": "Developer",
+                "roleNameGlowRoleAmbassador": "Ambassador",
+                "roleNameGlowRoleVerified": "Verified",
+                "roleNameGlowRoleSubscriber": "Subscriber",
                 "badgeGlowTitle": "Свечение значка",
                 "badgeGlowSubtitle": "Добавляет свечение значкам в профилях, быстрых профилях, чате и других областях.",
                 "quickProfileRoleIconsOnlyTitle": "Только значки ролей быстрого профиля",
@@ -5639,10 +5639,10 @@
                 "roomRoleAssignmentLimitsValuesHint": "Используйте 0, чтобы оставить роль неограниченной. Комнаты могут иметь свои собственные ограничения в модальном окне комнаты.",
                 "roomRoleAssignmentLimitInvalid": "Введите значения от 0 до 10000.",
                 "roomRoleAssignmentLimitRoles": {
-                    "resident_dj": "Резиденты-диджеи",
-                    "bouncer": "Вышибалы",
-                    "manager": "Менеджеры",
-                    "cohost": "Соведущие"
+                    "resident_dj": "Resident DJs",
+                    "bouncer": "Bouncers",
+                    "manager": "Managers",
+                    "cohost": "Co-hosts"
                 },
                 "roomRoleAssignmentLimitsSave": "Сохранить лимиты",
                 "roomRoleAssignmentLimitsSaving": "Сохранение лимитов...",
@@ -5654,19 +5654,19 @@
                 "staffChatRoleAccessAllowed": "Имеет доступ к чату персонала.",
                 "staffChatRoleAccessBlocked": "Не могу войти в чат сотрудников.",
                 "staffChatRoleAccessRoles": {
-                    "resident_dj": "Резиденты-диджеи",
-                    "bouncer": "Вышибалы",
-                    "manager": "Менеджеры",
-                    "cohost": "Соведущие"
+                    "resident_dj": "Resident DJs",
+                    "bouncer": "Bouncers",
+                    "manager": "Managers",
+                    "cohost": "Co-hosts"
                 },
                 "staffChatRoleAccessSave": "Сохранить доступ",
                 "staffChatRoleAccessSaving": "Сохраняем доступ...",
                 "staffChatRoleAccessSaveError": "Нам не удалось обновить доступ к чату для сотрудников.",
                 "staffChatRoleAccessUpdated": "Обновлен доступ к чату сотрудников.",
-                "roomRoleLimitCohost": "Соведущий",
-                "roomRoleLimitManager": "Менеджер",
-                "roomRoleLimitBouncer": "Вышибала",
-                "roomRoleLimitResidentDj": "Резидент DJ",
+                "roomRoleLimitCohost": "Co-Host",
+                "roomRoleLimitManager": "Manager",
+                "roomRoleLimitBouncer": "Bouncer",
+                "roomRoleLimitResidentDj": "Resident DJ",
                 "subscriberPerksTitle": "Привилегии для подписчиков",
                 "subscriberPerksSubtitle": "Управляйте преимуществами подписки, которые уже поддерживаются средой выполнения платформы.",
                 "subscriberPerksSave": "Сохранить льготы",
@@ -7010,9 +7010,9 @@
             "audienceCount": "{count, plural, =0 {0 people in the room} one {# person in the room} other {# people in the room}}",
             "open": "Открытая комната",
             "roles": {
-                "host": "Хозяин",
-                "cohost": "Соведущий",
-                "manager": "Менеджер"
+                "host": "Host",
+                "cohost": "Co-Host",
+                "manager": "Manager"
             },
             "tabs": {
                 "owned": "Комнаты, которыми вы владеете",
