@@ -4898,6 +4898,8 @@
         "subtitle": "Crie sorteios para a comunidade, acompanhe participantes e faça o sorteio dos vencedores."
       },
       "helpCalls": {
+        "title": "Chamados de Ajuda",
+        "subtitle": "Acompanhe pedidos de SOS enviados das salas para embaixadores e administradores.",
         "loading": "Carregando chamados...",
         "refresh": "Atualizar chamados",
         "refreshing": "Atualizando...",

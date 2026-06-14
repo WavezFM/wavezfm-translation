@@ -4893,6 +4893,8 @@
         "subtitle": "Create community giveaways, track entries, and draw winners."
       },
       "helpCalls": {
+        "title": "Help Calls",
+        "subtitle": "Track SOS requests sent from rooms to ambassadors and admins.",
         "loading": "Loading help calls...",
         "refresh": "Refresh help calls",
         "refreshing": "Refreshing...",
